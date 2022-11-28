@@ -4,8 +4,14 @@
 
     <main class="d-flex justify-content-center mt-5">
         <div>
-            <p>You are logged out!</p>
-            <p>You are logged in!</p>
+            <?php 
+                if (isset($_SESSION['userId'])) {
+                    echo '<h3>You are logged in!</h3>';
+                }
+                else {
+                    echo '<h3>You are logged out!</h3>';
+                }
+            ?>  
         </div>
     </main>
 
