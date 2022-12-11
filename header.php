@@ -28,7 +28,9 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.php">Home</a>
                         </li>
-                        <li><a class="nav-link" href="shop.php">Shop</a></li>
+                        <li class="nav-item">
+                            <li><a class="nav-link" href="shop.php">Shop</a></li>
+                        </li>
                         <li><a class="nav-link" href="about.php">About us</a></li>
                         <li><a class="nav-link" href="services.php">Services</a></li>
                         <li><a class="nav-link" href="blog.php">Blog</a></li>
@@ -44,4 +46,3 @@
     </header>
     
  
-    

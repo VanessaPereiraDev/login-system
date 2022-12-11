@@ -77,7 +77,7 @@
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">
-                                        <a href="#forgot">Forgot Password?</a>
+                                        <a href="forgot-psw.php">Forgot Password?</a>
                                     </div>
                                 </div>
                             </form>
