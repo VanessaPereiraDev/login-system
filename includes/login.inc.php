@@ -8,7 +8,7 @@
         $password = $_POST['psw'];
 
         if (empty($mailuid) || empty($password)) {
-            header("Location: ../index.php?error=emptyfields");
+            header("Location: ../login.php?error=emptyfields");
             exit();
         }
         else {

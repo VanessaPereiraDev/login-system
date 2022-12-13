@@ -13,7 +13,7 @@
 </head>
 <body>
     <?php 
-        // Error messages
+        // Error | Success messages
         if (isset($_GET['error'])) {
             if ($_GET['error'] == "emptyfields") {
                 echo '<p style="color: red; display: flex; justify-content: center;">Fill in all fields!</p>';
@@ -37,6 +37,11 @@
         elseif (isset($_GET['signup'])) {
             if ($_GET['signup'] == "success") {
                 echo '<p style="color: green; display: flex; justify-content: center;">Signup successful!</p>';
+            }
+        }
+        elseif (isset($_GET["newpwd"])) {
+            if ($_GET["newpwd"] == "passwordupdated") {
+                echo '<p style="color: green;">Your password has been reset!</p>';
             }
         }
 
@@ -77,7 +82,7 @@
                                     </div>
                                     <div class="hr"></div>
                                     <div class="foot-lnk">
-                                        <a href="forgot-psw.php">Forgot Password?</a>
+                                        <a href="forgot-psw.php">Forgot your password?</a>
                                     </div>
                                 </div>
                             </form>

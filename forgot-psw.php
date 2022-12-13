@@ -20,20 +20,27 @@
                             <h2 class="text-center">Forgot Password?</h2>
                             <p>You can reset your password here.</p>
                             <div class="panel-body">
-                
-                                <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+                                
+                                <form action="includes/reset-request.inc.php" method="post" id="register-form" role="form" autocomplete="off" class="form">
                                     <div class="form-group">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope color-blue"></i></span>
-                                            <input id="email" name="email" placeholder="email address" class="form-control"  type="email">
+                                            <input type="text" id="email" name="email" placeholder="Enter your email address..." class="form-control">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input name="recover-submit" class="btn btn-lg btn-success btn-block" value="Reset Password" type="submit">
+                                        <input type="submit" name="reset-request-submit" class="btn btn-lg btn-success btn-block" value="Reset Password">
                                     </div>
                                     <input type="hidden" class="hide" name="token" id="token" value=""> 
                                 </form>
-                
+                                <?php
+                                    if (isset($_GET["reset"])) {
+                                        if ($_GET["reset"] == "success") {
+                                            echo '<p style="color: green;">Check your email!</p>';
+                                        }
+                                    }
+                                ?>
+
                             </div>
                         </div>
                     </div>
